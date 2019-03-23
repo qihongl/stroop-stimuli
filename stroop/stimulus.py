@@ -101,7 +101,6 @@ def get_stimulus(
         color_delay, word_delay = compute_delays(SOA)
         color_stimulus[:color_delay, :] = 0
         word_stimulus[:word_delay, :] = 0
-        # task_stimulus[:abs(SOA), :] = 0
     # form the input dict
     input_dict = {
         color_input_layer: color_stimulus,
